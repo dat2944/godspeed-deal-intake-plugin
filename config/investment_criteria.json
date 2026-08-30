@@ -1,0 +1,75 @@
+{
+  "client": "Godspeed Capital Partners",
+  "last_updated": "2026-08-30",
+  "managed_by": "IT Solutions Consultant",
+  "notes": "These criteria are applied by the Godspeed Deal Intake Agent during Step 3 thesis screening. Update this file and system_prompt.md together whenever criteria change.",
+
+  "investment_criteria": {
+    "revenue": {
+      "label": "LTM Revenue",
+      "min_usd_millions": 10,
+      "max_usd_millions": 200,
+      "rating_logic": {
+        "met": "Revenue between $10M and $200M",
+        "partial": "Revenue slightly outside range but within reasonable proximity",
+        "not_met": "Revenue below $10M or above $200M",
+        "unknown": "Revenue not found in document"
+      }
+    },
+    "ebitda_margin": {
+      "label": "EBITDA Margin",
+      "min_pct": 10,
+      "rating_logic": {
+        "met": "EBITDA margin greater than 10%",
+        "partial": "EBITDA margin between 5% and 10%",
+        "not_met": "EBITDA margin below 5%",
+        "unknown": "EBITDA or Revenue not found — margin cannot be calculated"
+      }
+    },
+    "profitability": {
+      "label": "Profitability",
+      "rating_logic": {
+        "met": "Company is currently profitable",
+        "partial": "Company has a clear and documented path to profitability",
+        "not_met": "Company is not profitable and no path to profitability is evident",
+        "unknown": "Insufficient financial data to assess"
+      }
+    },
+    "market_position": {
+      "label": "Market Position",
+      "rating_logic": {
+        "met": "Document demonstrates a defensible competitive position in defined market",
+        "partial": "Some evidence of market differentiation but not clearly defensible",
+        "not_met": "No evidence of defensible market position",
+        "unknown": "Insufficient information to assess"
+      }
+    },
+    "revenue_quality": {
+      "label": "Revenue Quality",
+      "preferred": "Recurring or contracted revenue",
+      "rating_logic": {
+        "met": "Majority of revenue is recurring or contracted",
+        "partial": "Mix of recurring and transactional revenue",
+        "not_met": "Primarily transactional or project-based revenue",
+        "unknown": "Revenue composition not described in document"
+      }
+    },
+    "geography": {
+      "label": "Geography",
+      "preferred": ["USA", "Canada"],
+      "rating_logic": {
+        "met": "U.S.-based or North American operations",
+        "partial": "Primarily international with some U.S. presence",
+        "not_met": "No U.S. or North American operations",
+        "unknown": "Location not found in document"
+      }
+    }
+  },
+
+  "overall_rating_logic": {
+    "strong_fit": "4 or more criteria rated Met",
+    "possible_fit": "2 to 3 criteria rated Met or Partial",
+    "does_not_fit": "Fewer than 2 criteria rated Met",
+    "insufficient_data": "More than 3 criteria are Unknown"
+  }
+}
