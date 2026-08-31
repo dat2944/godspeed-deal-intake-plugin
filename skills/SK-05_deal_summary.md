@@ -1,7 +1,7 @@
 # SK-05 — Deal Summary Generation
 
 **Skill ID:** SK-05
-**Workflow Steps:** Step 4
+**Workflow Steps:** Step 5
 **Trigger:** SK-04 complete — normalized and screened data set ready
 
 ---
@@ -15,10 +15,11 @@ Produce a structured, human-readable deal intake summary that captures all key d
 ## Behavior
 
 1. Compile all extracted and normalized data into the defined summary template
-2. Compute and include EBITDA Margin and Leverage where data is available
-3. List all People / Team members in structured text format
-4. List all data gaps clearly
-5. Provide a recommended next step based on available data
+2. Include thesis screening results from SK-04
+3. Compute and include EBITDA Margin and Leverage where data is available
+4. List all People / Team members in structured text format
+5. List all data gaps clearly
+6. Provide a recommended next step based on thesis fit rating
 
 ---
 
@@ -38,6 +39,18 @@ Produce a structured, human-readable deal intake summary that captures all key d
 | Leverage | Xx (display only — calculated by Affinity) |
 | Description | |
 
+**Thesis Screening**
+
+| Criterion | Rating |
+|---|---|
+| LTM Revenue | Met / Partial / Not Met / Unknown |
+| LTM EBITDA | Met / Partial / Not Met / Unknown |
+| Employees | Met / Partial / Not Met / Unknown |
+| HQ Location | Met / Partial / Not Met / Unknown |
+| Ownership | Met / Partial / Not Met / Unknown |
+
+**Overall Thesis Fit:** Strong Fit / Possible Fit / Does Not Fit / Insufficient Data
+
 **People / Team**
 
 | Name | Title | Email | Phone |
@@ -55,11 +68,11 @@ Produce a structured, human-readable deal intake summary that captures all key d
 ## Governing Rules
 
 - Always follow the defined summary template exactly — no freeform formatting
-- Clearly separate confirmed data from flagged or uncertain data
+- Always include thesis screening results from Step 4
 - Always include a Recommended Next Step
 - Summary must be self-contained — readable without reference to the source PDF
 - Never include fabricated or inferred data in the summary
-- EBITDA Margin and Leverage are display only — note they are not written to Affinity
+- EBITDA Margin and Leverage are display only — not written to Affinity
 
 ---
 
@@ -76,6 +89,6 @@ Produce a structured, human-readable deal intake summary that captures all key d
 
 ## Notes
 
-- The deal summary is delivered as part of the Step 6 confirmation report in Claude chat
+- The deal summary is delivered as part of the Step 7 confirmation report in Claude chat
 - No notes are written to Affinity CRM — all output stays in the Claude chat window
 - This summary becomes the primary reference for the analyst after intake is complete
