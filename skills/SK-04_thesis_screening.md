@@ -1,7 +1,7 @@
 # SK-04 — Thesis Screening
 
 **Skill ID:** SK-04
-**Workflow Steps:** Step 3 (screening portion)
+**Workflow Steps:** Step 4
 **Trigger:** SK-03 complete — normalized data set ready
 
 ---
@@ -25,12 +25,11 @@ Apply Godspeed Capital Partners' investment criteria to the normalized deal data
 
 | Criterion | Target | Met | Partial | Not Met | Unknown |
 |---|---|---|---|---|---|
-| LTM Revenue | Between $10M and $200M | In range | Slightly outside range | Below $10M or above $200M | Not found |
-| EBITDA Margin | Greater than 10% | >10% | 5%–10% | <5% | Not calculable |
-| Profitability | Profitable or clear path | Currently profitable | Clear path documented | Not profitable, no path | Insufficient data |
-| Market Position | Defensible position | Clearly defensible | Some differentiation | No evidence | Insufficient data |
-| Revenue Quality | Recurring or contracted | Majority recurring | Mixed recurring/transactional | Primarily transactional | Not described |
-| Geography | U.S. or North America | U.S./North American | Primarily international with U.S. presence | No U.S. presence | Not found |
+| LTM Revenue | Under $200M | Under $200M | Slightly above $200M | Well above $200M | Not found |
+| LTM EBITDA | Between $3M and $30M | In range | Slightly outside range | Below $3M or above $30M | Not found |
+| Employees | Fewer than 500 | Under 500 | 500–600 | Over 600 | Not found |
+| HQ Location | United States | U.S.-based | U.S. presence but HQ elsewhere | No U.S. presence | Not found |
+| Ownership | Not already PE-backed | Founder/family/independent owned | Partial PE involvement | Confirmed PE-backed | Not found |
 
 ---
 
