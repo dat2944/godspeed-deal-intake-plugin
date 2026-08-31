@@ -1,7 +1,7 @@
 # SK-09 — Confirmation Report
 
 **Skill ID:** SK-09
-**Workflow Steps:** Step 6
+**Workflow Steps:** Step 7
 **Trigger:** All prior steps complete or on any Critical failure
 
 ---
@@ -18,7 +18,7 @@ Deliver a structured confirmation report to the analyst in the Claude chat windo
 2. List all Affinity records created or updated with IDs
 3. Report fields written vs. fields skipped or rejected
 4. Surface all data gaps requiring analyst follow-up
-5. Deliver the full deal intake summary
+5. Deliver the full deal intake summary including thesis screening results
 6. Provide a recommended next step
 
 ---
@@ -40,8 +40,7 @@ Deliver a structured confirmation report to the analyst in the Claude chat windo
 **Fields Written:** X of 8 fields successfully written
 
 **Failed Actions**
-- (list any failed MCP calls with error detail and recommended
-  remediation — if none, write "None")
+- (list any failed MCP calls with error detail and recommended remediation — if none, write "None")
 
 **Deal Intake Summary**
 
@@ -56,6 +55,18 @@ Deliver a structured confirmation report to the analyst in the Claude chat windo
 | Net Debt | $XM |
 | Leverage | Xx (calculated by Affinity) |
 | Description | |
+
+**Thesis Screening**
+
+| Criterion | Rating |
+|---|---|
+| LTM Revenue | Met / Partial / Not Met / Unknown |
+| LTM EBITDA | Met / Partial / Not Met / Unknown |
+| Employees | Met / Partial / Not Met / Unknown |
+| HQ Location | Met / Partial / Not Met / Unknown |
+| Ownership | Met / Partial / Not Met / Unknown |
+
+**Overall Thesis Fit:** Strong Fit / Possible Fit / Does Not Fit / Insufficient Data
 
 **People / Team**
 
