@@ -1,7 +1,7 @@
 # SK-08 — Note Authoring
 
 **Skill ID:** SK-08
-**Workflow Steps:** Step 5 (post record write)
+**Workflow Steps:** Step 6 (post record write)
 **Trigger:** SK-07 complete — Company record written successfully
 
 ---
