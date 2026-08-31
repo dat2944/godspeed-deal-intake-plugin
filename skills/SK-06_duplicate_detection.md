@@ -1,7 +1,7 @@
 # SK-06 — Duplicate Detection
 
 **Skill ID:** SK-06
-**Workflow Steps:** Step 5a
+**Workflow Steps:** Step 6a
 **Trigger:** SK-05 complete — deal summary generated, ready for CRM entry
 
 ---
@@ -45,4 +45,12 @@ Search Affinity CRM for existing Company records that match the extracted data b
 - Always search before any create_organization call
 - Never auto-merge records on a low confidence match — always surface to analyst
 - If search fails, do not halt the workflow — proceed with create path and flag the gap
-- Capture and store
+- Capture and store the org ID from any match found — it is required for all subsequent field write calls
+
+---
+
+## Notes
+
+- This is the only duplicate check in v1.0 — Person record duplicate detection is deferred to v1.1
+- Low confidence matches are flagged in the confirmation report for analyst resolution
+- The org ID captured here is passed to SK-07 for all field write operations
