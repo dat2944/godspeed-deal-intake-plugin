@@ -2,66 +2,61 @@
   "client": "Godspeed Capital Partners",
   "last_updated": "2026-08-30",
   "managed_by": "IT Solutions Consultant",
-  "notes": "These criteria are applied by the Godspeed Deal Intake Agent during Step 3 thesis screening. Update this file and system_prompt.md together whenever criteria change.",
+  "notes": "These criteria are applied by the Godspeed Deal Intake Agent during Step 4 thesis screening. Update this file and system_prompt.md together whenever criteria change.",
 
   "investment_criteria": {
-    "revenue": {
+    "ltm_revenue": {
       "label": "LTM Revenue",
-      "min_usd_millions": 10,
+      "target": "Under $200M",
       "max_usd_millions": 200,
       "rating_logic": {
-        "met": "Revenue between $10M and $200M",
-        "partial": "Revenue slightly outside range but within reasonable proximity",
-        "not_met": "Revenue below $10M or above $200M",
+        "met": "Revenue under $200M",
+        "partial": "Revenue slightly above $200M",
+        "not_met": "Revenue well above $200M",
         "unknown": "Revenue not found in document"
       }
     },
-    "ebitda_margin": {
-      "label": "EBITDA Margin",
-      "min_pct": 10,
+    "ltm_ebitda": {
+      "label": "LTM EBITDA",
+      "target": "Between $3M and $30M",
+      "min_usd_millions": 3,
+      "max_usd_millions": 30,
       "rating_logic": {
-        "met": "EBITDA margin greater than 10%",
-        "partial": "EBITDA margin between 5% and 10%",
-        "not_met": "EBITDA margin below 5%",
-        "unknown": "EBITDA or Revenue not found — margin cannot be calculated"
+        "met": "EBITDA between $3M and $30M",
+        "partial": "EBITDA slightly outside range",
+        "not_met": "EBITDA below $3M or above $30M",
+        "unknown": "EBITDA not found in document"
       }
     },
-    "profitability": {
-      "label": "Profitability",
+    "employees": {
+      "label": "Employees",
+      "target": "Fewer than 500",
+      "max_headcount": 500,
       "rating_logic": {
-        "met": "Company is currently profitable",
-        "partial": "Company has a clear and documented path to profitability",
-        "not_met": "Company is not profitable and no path to profitability is evident",
-        "unknown": "Insufficient financial data to assess"
+        "met": "Fewer than 500 employees",
+        "partial": "500 to 600 employees",
+        "not_met": "More than 600 employees",
+        "unknown": "Employee count not found in document"
       }
     },
-    "market_position": {
-      "label": "Market Position",
+    "hq_location": {
+      "label": "HQ Location",
+      "target": "United States",
       "rating_logic": {
-        "met": "Document demonstrates a defensible competitive position in defined market",
-        "partial": "Some evidence of market differentiation but not clearly defensible",
-        "not_met": "No evidence of defensible market position",
-        "unknown": "Insufficient information to assess"
-      }
-    },
-    "revenue_quality": {
-      "label": "Revenue Quality",
-      "preferred": "Recurring or contracted revenue",
-      "rating_logic": {
-        "met": "Majority of revenue is recurring or contracted",
-        "partial": "Mix of recurring and transactional revenue",
-        "not_met": "Primarily transactional or project-based revenue",
-        "unknown": "Revenue composition not described in document"
-      }
-    },
-    "geography": {
-      "label": "Geography",
-      "preferred": ["USA", "Canada"],
-      "rating_logic": {
-        "met": "U.S.-based or North American operations",
-        "partial": "Primarily international with some U.S. presence",
-        "not_met": "No U.S. or North American operations",
+        "met": "Headquartered in the United States",
+        "partial": "U.S. presence but headquartered outside the U.S.",
+        "not_met": "No U.S. presence",
         "unknown": "Location not found in document"
+      }
+    },
+    "ownership": {
+      "label": "Ownership",
+      "target": "Not already PE-backed",
+      "rating_logic": {
+        "met": "Founder-owned, family-owned, or independently owned",
+        "partial": "Partial PE involvement or minority PE stake",
+        "not_met": "Confirmed PE-backed",
+        "unknown": "Ownership structure not found in document"
       }
     }
   },
@@ -71,5 +66,14 @@
     "possible_fit": "2 to 3 criteria rated Met or Partial",
     "does_not_fit": "Fewer than 2 criteria rated Met",
     "insufficient_data": "More than 3 criteria are Unknown"
+  },
+
+  "deferred_criteria": {
+    "note": "The following criteria were removed from v1.0 scope at client request. They can be added back in a future version by updating this file and system_prompt.md together.",
+    "removed": [
+      "Market Position — Defensible competitive position",
+      "Revenue Quality — Recurring or contracted revenue preferred",
+      "Profitability — Currently profitable or clear path to profitability"
+    ]
   }
 }
