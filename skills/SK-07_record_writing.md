@@ -1,7 +1,7 @@
 # SK-07 — Affinity Record Writing
 
 **Skill ID:** SK-07
-**Workflow Steps:** Step 5b
+**Workflow Steps:** Step 6b
 **Trigger:** SK-06 complete — duplicate check done, org ID captured or create path confirmed
 
 ---
