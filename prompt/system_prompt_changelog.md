@@ -4,7 +4,28 @@
 
 ---
 
-## Version 1.0 — 2026-08-30
+## Version 1.2 — 2026-08-30
+**Changed by:** IT Solutions Consultant
+
+### Changes
+- Added Step 4 — Screen Against Investment Thesis to workflow
+- Updated investment criteria to confirmed Godspeed targets:
+  - LTM Revenue: Under $200M
+  - LTM EBITDA: Between $3M and $30M
+  - Employees: Fewer than 500
+  - HQ Location: United States
+  - Ownership: Not already PE-backed
+- Removed Market Position, Revenue Quality, and Profitability criteria — deferred to future version
+- Renumbered all steps — Steps 4 through 6 shifted to Steps 5 through 7
+- Added thesis screening results table to Deal Summary (Step 5) and Confirmation Report (Step 7)
+- Added Leverage row to Confirmation Report summary table
+- Fixed People / Team format to Name | Title | Email | Phone throughout
+- Added EBITDA Margin to Governing Rules as display only — not written to Affinity
+- Replaced closing placeholder line with correct version footer
+
+---
+
+## Version 1.1 — 2026-08-30
 **Changed by:** IT Solutions Consultant
 
 ### Changes
@@ -29,7 +50,7 @@
 
 ### Changes
 - Initial production system prompt created
-- 7 workflow steps defined
+- 6 workflow steps defined
 - Full field extraction list established
 - Affinity MCP tool call sequence defined
 - Investment thesis screening criteria defined
