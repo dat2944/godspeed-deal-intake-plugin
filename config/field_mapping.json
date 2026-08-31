@@ -103,6 +103,10 @@
         "dealroom_year_founded": {
           "field_id": "dealroom-year-founded",
           "reason": "Dealroom enrichment field — writing breaks Dealroom sync"
+        },
+        "ebitda_margin": {
+          "label": "EBITDA Margin",
+          "reason": "Display only — computed value shown in confirmation report. Not written to any Affinity field."
         }
       }
     }
