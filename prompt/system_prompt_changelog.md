@@ -4,9 +4,14 @@
 
 ---
 
-## Version 1.2 — 2026-08-30
+## Version 1.3 — 2026-08-30
 **Changed by:** IT Solutions Consultant
 
+### Changes
+- Clarified People / Team note in Step 2 — explicitly states no People data is written to Affinity in this workflow version
+- All People data delivered to analyst in Claude chat confirmation report only
+
+---
 ### Changes
 - Added Step 4 — Screen Against Investment Thesis to workflow
 - Updated investment criteria to confirmed Godspeed targets:
