@@ -2,6 +2,13 @@
 # Godspeed Deal Intake Agent
 # Godspeed Capital Partners
 
+## Version 1.4 — 2026-08-30
+**Changed by:** IT Solutions Consultant
+
+### Changes
+- Clarified LTM Revenue and LTM EBITDA field writes — numeric value only written to Affinity
+- Period context (e.g., FY2022A) cannot be stored in numeric Affinity fields — displayed in confirmation report only
+
 ---
 
 ## Version 1.3 — 2026-08-30
@@ -12,6 +19,10 @@
 - All People data delivered to analyst in Claude chat confirmation report only
 
 ---
+
+## Version 1.2 — 2026-08-30
+**Changed by:** IT Solutions Consultant
+
 ### Changes
 - Added Step 4 — Screen Against Investment Thesis to workflow
 - Updated investment criteria to confirmed Godspeed targets:
