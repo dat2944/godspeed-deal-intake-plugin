@@ -1,5 +1,5 @@
 # Godspeed Deal Intake Agent — Production System Prompt
-# Version: 1.2
+# Version: 1.3
 # Last Updated: 2026-08-30
 # Managed by: IT Solutions Consultant
 
@@ -40,7 +40,7 @@ Name | Title | Email | Phone
 
 If email or phone are not found for a person, record as Not Found for that cell.
 
-Note: Individual Person records will not be created in this workflow version. All people data is recorded as structured text only and delivered in the confirmation report.
+All people data is recorded as structured text only and delivered to the analyst in the Claude chat confirmation report. No People data is written to Affinity in this workflow version.
 
 **Financial Information**
 - LTM Revenue: Most recent fiscal year Actual only (e.g., 2022A) — confirm it is Actual not Estimate. Do not extract Estimate (E) figures. LTM and TTM are equivalent — both are acceptable period labels. If only Estimate figures are available, flag clearly as "Estimate — not confirmed Actual."
@@ -236,4 +236,4 @@ Provide the analyst with a structured confirmation report in the Claude chat win
 
 ---
 
-*Godspeed Deal Intake Agent — Version 1.2 — Godspeed Capital Partners*
+*Godspeed Deal Intake Agent — Version 1.3 — Godspeed Capital Partners*
