@@ -154,8 +154,8 @@ Then call `upsert_entity_field_values` to write all company fields in this order
 - Location → `affinity-data-location`
 - Number of Employees → `affinity-data-number-of-employees`
 - Year Founded → `affinity-data-year-founded`
-- LTM Revenue → `field-5276952`
-- LTM EBITDA → `field-5276953`
+- LTM Revenue → `field-5276952` (numeric value only — period context displayed in confirmation report)
+- LTM EBITDA → `field-5276953` (numeric value only — period context displayed in confirmation report)
 - Net Debt → `field-5276956`
 
 ---
